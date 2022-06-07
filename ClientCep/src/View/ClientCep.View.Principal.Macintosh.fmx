@@ -1,0 +1,7 @@
+inherited fPrincipal_Macintosh: TfPrincipal_Macintosh
+  DesignerMasterStyle = 0
+  inherited MemoResponse: TMemo
+    Viewport.Width = 419.000000000000000000
+    Viewport.Height = 546.000000000000000000
+  end
+end

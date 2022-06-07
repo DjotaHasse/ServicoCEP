@@ -1,0 +1,187 @@
+object fPrincipal: TfPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Consulta CEP'
+  ClientHeight = 666
+  ClientWidth = 419
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Top
+    Size.Width = 419.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFE0E0E0
+    object Server: TLabel
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 74.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Server:'
+      TabOrder = 0
+    end
+    object edServer: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 1
+      Text = 'localhost'
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 335.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Rectangle2: TRectangle
+    Align = Top
+    Position.Y = 40.000000000000000000
+    Size.Width = 419.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFE0E0E0
+    object Label1: TLabel
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 74.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Porta:'
+      TabOrder = 0
+    end
+    object nbPorta: TNumberBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 1
+      Cursor = crIBeam
+      Max = 100000.000000000000000000
+      Value = 9000.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 335.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object MemoResponse: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ReadOnly = True
+    StyledSettings = [Size, Style, FontColor]
+    TextSettings.Font.Family = 'Courier New'
+    TextSettings.WordWrap = True
+    Align = Client
+    Size.Width = 419.000000000000000000
+    Size.Height = 546.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 415.000000000000000000
+    Viewport.Height = 542.000000000000000000
+  end
+  object Rectangle3: TRectangle
+    Align = Top
+    Position.Y = 80.000000000000000000
+    Size.Width = 419.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFE0E0E0
+    object Rectangle4: TRectangle
+      Align = Client
+      Size.Width = 242.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFE0E0E0
+      object btServer1: TButton
+        Tag = 1
+        Align = Left
+        Margins.Top = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Server #1'
+        OnClick = btServer1Click
+      end
+      object btServer3: TButton
+        Tag = 3
+        Align = Left
+        Margins.Top = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 160.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Server #3'
+        OnClick = btServer1Click
+      end
+      object btServer2: TButton
+        Tag = 2
+        Align = Left
+        Margins.Top = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 80.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Server #2'
+        OnClick = btServer1Click
+      end
+    end
+    object Rectangle5: TRectangle
+      Align = Left
+      Size.Width = 177.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFE0E0E0
+      object Label2: TLabel
+        Align = Left
+        Margins.Left = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Size.Width = 74.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'CEP:'
+        TabOrder = 0
+      end
+      object edCEP: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 1
+        FilterChar = '0123456789'
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 93.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object RESTClientCEP: TRESTClient
+    Params = <>
+    Left = 72
+    Top = 216
+  end
+  object RESTRequestCEP: TRESTRequest
+    Client = RESTClientCEP
+    Params = <>
+    SynchronizedEvents = False
+    Left = 72
+    Top = 272
+  end
+end

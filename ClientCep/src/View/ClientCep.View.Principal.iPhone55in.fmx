@@ -1,0 +1,36 @@
+inherited fPrincipal_iPhone55in: TfPrincipal_iPhone55in
+  ClientHeight = 716
+  ClientWidth = 414
+  DesignerMasterStyle = 0
+  inherited Rectangle1: TRectangle
+    Size.Width = 414.000000000000000000
+    inherited edServer: TEdit
+      Size.Width = 330.000000000000000000
+      Size.Height = 30.000000000000000000
+    end
+  end
+  inherited Rectangle2: TRectangle
+    Size.Width = 414.000000000000000000
+    inherited nbPorta: TNumberBox
+      Size.Width = 330.000000000000000000
+      Size.Height = 30.000000000000000000
+    end
+  end
+  inherited MemoResponse: TMemo
+    Size.Width = 414.000000000000000000
+    Size.Height = 596.000000000000000000
+    Viewport.Width = 414.000000000000000000
+    Viewport.Height = 596.000000000000000000
+  end
+  inherited Rectangle3: TRectangle
+    Size.Width = 414.000000000000000000
+    inherited Rectangle4: TRectangle
+      Size.Width = 237.000000000000000000
+    end
+    inherited Rectangle5: TRectangle
+      inherited edCEP: TEdit
+        Size.Height = 30.000000000000000000
+      end
+    end
+  end
+end
